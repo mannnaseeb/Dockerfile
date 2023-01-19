@@ -7,7 +7,7 @@ RUN yum -y install java
 RUN yum install -y httpd \
   zip \
  unzip 
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page286/avocado.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page282/pro.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip pro.zip
 RUN cp -rvf pro-html/* .
