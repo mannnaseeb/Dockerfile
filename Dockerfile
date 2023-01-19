@@ -9,8 +9,8 @@ RUN yum install -y httpd \
  unzip 
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page286/avocado.zip /var/www/html/
 WORKDIR /var/www/html
-RUN unzip avocado.zip
-RUN cp -rvf avocado/* .
-RUN rm -rf avocado avocado.zip 
+RUN unzip pro.zip
+RUN cp -rvf pro-html/* .
+RUN rm -rf pro-html pro.zip 
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80
